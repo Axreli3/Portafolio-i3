@@ -27,10 +27,10 @@ Frontend Code con ideas geniales: https://codepen.io/
 	--header-height: 60px;
 
 	/* Colores */
-	--primary-color: light-dark(#111, #ffffffcc);
-	--bg-color-section1: light-dark(#eee, #111);
-	--bg-color-section2: light-dark(#fafafa, #6a6a6a);
-	--bg-color-buttons: light-dark(#e0e0e0, #6a6a6a);
+	--primary-color: light-dark(#000000, #e1e1e1);
+	--bg-color-section1: light-dark(#f6d3ff, #74488c);
+	--bg-color-section2: light-dark(#ceb4ff, #2e2132);
+	--bg-color-buttons: light-dark(#ffffff, #2e2e2e);
 
 	/* Typografia */
 	--normal-font-size: 16px;
@@ -505,7 +505,7 @@ html {
 				text-transform: uppercase;
 				border-right: 4px solid;
 				white-space: nowrap;
-				width: 15ch;
+				width: 16ch;
 				animation: typing 2s infinite steps(15) alternate,
 					blink 0.3s infinite step-end alternate;
 				overflow: hidden;
