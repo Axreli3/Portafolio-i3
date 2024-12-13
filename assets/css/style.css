@@ -52,7 +52,6 @@ Frontend Code con ideas geniales: https://codepen.io/
 	--box-shadow: 0px 10px 100px #0000001a;
 }
 
-/* ============= BASE ============= */
 html {
 	box-sizing: border-box;
 	scroll-behavior: smooth;
@@ -82,7 +81,7 @@ html {
 		height: auto;
 		display: block;
 	}
-	/* darkmode  */
+
 	&:has([name='color-scheme']:checked) {
 		color-scheme: dark;
 	}
@@ -180,8 +179,6 @@ html {
 		transform: translateY(-10%) scaleY(1.05);
 	}
 }
-
-/* ============= Header & NavBar ============= */
 
 .header {
 	position: fixed;
@@ -394,8 +391,9 @@ html {
 		box-shadow: var(--box-shadow);
 	}
 }
-
-/* ============= Home ============= */
+.home__image{
+	display: flex;
+}
 .home {
 	background-color: var(--bg-color-section1);
 	position: relative;
@@ -468,8 +466,6 @@ html {
 		padding: var(--header-height) 0 3rem;
 		.home__image {
 			width: clamp(min(320px, 100%), 85vw, 445px);
-			height: auto;
-			margin: 0 auto;
 		}
 		.home__social {
 			position: absolute;
@@ -506,6 +502,7 @@ html {
 		}
 		.home__buttons {
 			text-align: center;
+			
 		}
 	}
 }
@@ -522,27 +519,26 @@ html {
 	}
 }
 
-/* ============= About ============= */
 .about {
 	background-color: var(--bg-color-section2);
 	overflow: hidden;
 	.about__container {
+		display: flex;
 		.about__description {
 			text-align: center;
 		}
 		.about__cards {
 			margin-top: 2rem;
 			flex-direction: column;
-			gap: 2rem;
+
 			.about__card {
+			    margin-left: 100px;
 				background-color: var(--bg-color-section1);
 				padding: 2rem;
 				border-radius: 5px;
 				box-shadow: var(--box-shadow);
-				.about__card--img {
-					width: 100%;
-					height: 100%;
-					object-fit: cover;
+				video {
+					display: flex;
 				}
 			}
 		}
@@ -569,7 +565,7 @@ html {
 					border-radius: 1rem;
 					text-align: center;
 					width: inherit;
-					transition: 0.3s cubic-bezier(0.1, -0.28, 0.735, 0.045);
+					transition: 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 					overflow: hidden;
 
 					.skills__cards-title {
@@ -679,7 +675,6 @@ html {
 	}
 }
 
-/* ============= Contact ============= */
 .contact {
 	background-color: var(--bg-color-section1);
 	.contact__container {
@@ -775,8 +770,6 @@ html {
 		padding-top: 2rem;
 	}
 }
-
-/* ============= Media Queries ============= */
 
 @media (width >= 768px) {
 	:root {
