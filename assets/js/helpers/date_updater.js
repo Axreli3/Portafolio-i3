@@ -6,3 +6,4 @@ function updateCopyRightYear() {
 }
 
 export default updateCopyRightYear;
+

@@ -23,7 +23,7 @@ function sendEmail() {
 		};
 
 		if (params.name && params.email && params.message && params.subject) {
-			emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', params).then(
+			emailjs.send('service_dda88ui', 'template_3di28kz', params).then(
 				(response) => {
 					console.log('SUCCESS!', response.status, response.text);
 					openModal();
