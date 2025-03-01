@@ -523,21 +523,23 @@ html {
 	background-color: var(--bg-color-section2);
 	overflow: hidden;
 	.about__container {
-		display: flex;
 		.about__description {
 			text-align: center;
 		}
 		.about__cards {
 			margin-top: 2rem;
-			flex-direction: column;
-
 			.about__card {
-			    margin-left: 100px;
+				max-width: 600px;
+			    margin-left: 200px;
 				background-color: var(--bg-color-section1);
 				padding: 2rem;
 				border-radius: 5px;
 				box-shadow: var(--box-shadow);
 				video {
+					width: 540px;
+					background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
 					display: flex;
 				}
 			}
